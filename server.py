@@ -5,7 +5,7 @@ import re
 
 app = Flask(__name__)
 
-API_KEY = "여기에_NEIS_API_KEY"
+API_KEY = "82e9dc4cbc6340b2b4e3f5c8a8c56f9c"
 ATPT_OFCDC_SC_CODE = "J10"
 SD_SCHUL_CODE = "7530189"
 
@@ -82,3 +82,4 @@ if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 10000))  # Render가 PORT 환경변수로 포트 전달
     app.run(host="0.0.0.0", port=port)
+
