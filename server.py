@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # ⚠️ 여기에 NEIS API Key 입력
-API_KEY = "여기에_NEIS_API_KEY"
+API_KEY = "82e9dc4cbc6340b2b4e3f5c8a8c56f9c"
 ATPT_OFCDC_SC_CODE = "J10"  # 교육청 코드
 SD_SCHUL_CODE = "7530189"   # 양명고 학교 코드
 
@@ -107,4 +107,5 @@ scheduleMidnightRefresh()
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Render에서 자동 할당 포트
+
     app.run(host="0.0.0.0", port=port)
