@@ -79,4 +79,6 @@ scheduleMidnightRefresh()
 """)
 
 if __name__ == "__main__":
-    app.run()
+    import os
+    port = int(os.environ.get("PORT", 10000))  # Render가 PORT 환경변수로 포트 전달
+    app.run(host="0.0.0.0", port=port)
